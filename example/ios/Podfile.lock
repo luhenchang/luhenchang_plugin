@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - luhenchang_plugin (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - luhenchang_plugin (from `.symlinks/plugins/luhenchang_plugin/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  luhenchang_plugin:
+    :path: ".symlinks/plugins/luhenchang_plugin/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  luhenchang_plugin: 57a362a39c65630440a3d6c03f7bda193e65ae6f
+
+PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
+
+COCOAPODS: 1.8.4
