@@ -64,9 +64,9 @@ class DateUtils {
   ///format:"yyyy年MM月dd hh:mm:ss"  "yyy?MM?dd  hh?MM?dd" "yyyy:MM:dd"......
   ///结果： 2019?08?04  02?08?02
   String getFormartDate(int timeSamp,{format="yyyy年MM月dd hh:mm:ss"}){
-    var DateFormart = new DateFormat(format);
+    DateFormat dateFormart = new DateFormat(format);
     var dateTime = new DateTime.fromMillisecondsSinceEpoch(timeSamp);
-    String formartResult = DateFormart.format(dateTime);
+    String formartResult = dateFormart.format(dateTime);
     return formartResult;
   }
   ///1.获取从某一天开始到某一天结束的所有的中间日期，例如输入 startTime:2019:07:31  endTime:2019:08:31  就会返回所有的中间天数。
@@ -123,7 +123,6 @@ class DateUtils {
   List<TimeDate> getTimeStartTimeAndEndTime({startTime: int, dayNumber: int, format: String}) {
     var mDateList = List<TimeDate>();
     //记录往后每一天的时间搓，用来和最后一天到做对比。这样就能知道什么时候停止了。
-    int allTimeEnd = 0;
     //记录当前到个数(相当于天数)
     int currentFlag = 0;
     var mothFormatFlag = new DateFormat(format);
@@ -149,11 +148,11 @@ class DateUtils {
   getEndMoth(int timeSamp, {format="yyyy年MM月dd hh:mm:ss"}) {
     var dateFormart = new DateFormat(format);
     var dateTime = new DateTime.fromMillisecondsSinceEpoch(timeSamp);
-    var DateNextMonthDate = new DateTime(dateTime.year, dateTime.month + 1, 1);
+    DateTime dateNextMonthDate = new DateTime(dateTime.year, dateTime.month + 1, 1);
     int nextTimeSamp =
-        DateNextMonthDate.millisecondsSinceEpoch - 24 * 60 * 60 * 1000;
+        dateNextMonthDate.millisecondsSinceEpoch - 24 * 60 * 60 * 1000;
     //取得了下一个月1号码时间戳
-    var dateTimeeee = new DateTime.fromMillisecondsSinceEpoch(nextTimeSamp);
+    DateTime dateTimeeee = new DateTime.fromMillisecondsSinceEpoch(nextTimeSamp);
     String formartResult = dateFormart.format(dateTimeeee);
     return formartResult;
   }
@@ -164,17 +163,17 @@ class DateUtils {
   ///format:想要的格式  "yyyy年MM月dd hh:mm:ss"  "yyy?MM?dd  hh?MM?dd" "yyyy:MM:dd"
   getEndMothFor({mothFormartTime="1970年01月01", format: String}) {
     DateTime startDate = DateTime.parse(mothFormartTime);
-    var dateFormart = new DateFormat(format);
+    DateFormat dateFormart = new DateFormat(format);
     //DateTime获取年和月
-    var dateTime = new DateTime.fromMillisecondsSinceEpoch(
+    DateTime dateTime = new DateTime.fromMillisecondsSinceEpoch(
         startDate.millisecondsSinceEpoch);
     //通过DateTime获取当月的下个月第一天。
-    var DateNextMonthDate = new DateTime(dateTime.year, dateTime.month + 1, 1);
+    DateTime dateNextMonthDate = new DateTime(dateTime.year, dateTime.month + 1, 1);
     //下一个月的第一天时间戳减去一天的时间戳就是当前月的最后一天的时间戳
     int nextTimeSamp =
-        DateNextMonthDate.millisecondsSinceEpoch - 24 * 60 * 60 * 1000;
+        dateNextMonthDate.millisecondsSinceEpoch - 24 * 60 * 60 * 1000;
     //取得了下一个月1号码时间戳
-    var dateTimeeee = new DateTime.fromMillisecondsSinceEpoch(nextTimeSamp);
+    DateTime dateTimeeee = new DateTime.fromMillisecondsSinceEpoch(nextTimeSamp);
     String formartResult = dateFormart.format(dateTimeeee);
     return formartResult;
   }
