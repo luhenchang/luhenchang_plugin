@@ -120,8 +120,7 @@ class DateUtils {
   ///startTime:输入其实时间的时间戳也可以。例如 1570723200000
   ///dayNumber:所需要后面的几天以内的日期数字 1
   ///format 输入时间格式
-  List<TimeDate> getTimeStartTimeAndEndTime(
-      {startTime: int, dayNumber: int, format: String}) {
+  List<TimeDate> getTimeStartTimeAndEndTime({startTime: int, dayNumber: int, format: String}) {
     var mDateList = List<TimeDate>();
     //记录往后每一天的时间搓，用来和最后一天到做对比。这样就能知道什么时候停止了。
     int allTimeEnd = 0;
