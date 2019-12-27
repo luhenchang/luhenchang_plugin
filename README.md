@@ -12,3 +12,10 @@ Android and/or iOS.
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+
+1. Depend on it
+Add this to your package's pubspec.yaml file:
+
+
+->dependencies:
+  luhenchang_plugin: ^0.0.1
