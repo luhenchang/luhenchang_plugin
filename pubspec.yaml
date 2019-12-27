@@ -1,19 +1,21 @@
 name: luhenchang_plugin
-description: A new Flutter plugin.
+description: A new Flutter plugin about Tools that are convenient for developers want to use, come on we are the best, it is my pleasure to provide the Flutter plugin for everyone.
 version: 0.0.1
-author:
-homepage:
+author: fei wang <luhenchang1314@gmail.com>
+homepage: https://github.com/luhenchang/luhenchang_plugin
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  intl: 0.16.0
   flutter:
     sdk: flutter
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -58,3 +60,4 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+
