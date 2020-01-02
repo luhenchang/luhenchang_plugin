@@ -82,11 +82,11 @@ samples, guidance on mobile development, and a full API reference.
       
       
       
-      ### 一，真实点,直接上图吧。
+### 一,直接上图吧。
 [github地址](https://github.com/luhenchang/flutter_time_axis)  
+[博客地址](https://juejin.im/post/5d105d9af265da1b6f4380e6#heading-2)   
 [视频教学地址](https://member.bilibili.com/v2#/upload-manager/article)  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200102094751480.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjY3Nzcw,size_16,color_FFFFFF,t_70)
- 
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b87f5b67e6644e?w=2880&h=1636&f=png&s=2132827)
 
 > `1.位置，上图可见,时间轴可以在左边，也可以在中间，当然了可以在任何位置。`  
   `2.时间轴样式，当然了我们时间轴比仅仅限制为一个圆圈是吧,当然了你的部件能写多炫酷，砸门的时间轴也可以,上图（圆里面爱，图片，黄色背景文字，其实都是一长串部件）。`   
@@ -125,14 +125,16 @@ samples, guidance on mobile development, and a full API reference.
       ),
     );
 ```
-![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_anni.png?raw=true)
+
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b882bbf92c5f52?w=632&h=1252&f=png&s=500230)  
+
 当然很low吧。我们可以看到绘制完成时候可以通过border来绘制边来画出线。其实到这里我想简单的时间轴不用我写了吧？
 Colum(
   圆圈，
   容器(border),
   圆圈
-)
-![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_2.png?raw=true)
+)  
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b88374f5194ce9?w=632&h=1252&f=png&s=377942)
 
 我们看看border源码：
 
@@ -218,7 +220,8 @@ class MyPainterLeft extends CustomPainter {
 }
 ```
 
-### 三，使用： 
+三，使用：  
+ 
 | 属性                 | 属性使用介绍       |  是否必须           |
 |----------------------|--------------------|---------------------|
 | int index            | 列表的index，用来搞定时间轴部件|   true     |
@@ -244,11 +247,15 @@ class MyPainterLeft extends CustomPainter {
  1.pubspec.yaml里面
    flutter_time_axis:  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git: https://github.com/luhenchang/flutter_time_axis.git
-![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_3.png?raw=true)    
+    
 2.实例1:
-![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_4.png?raw=true)
-![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_5.png?raw=true)
+
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b8854b03df617e?w=828&h=666&f=png&s=172056)  
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b884fb7573664f?w=632&h=1252&f=png&s=116245)
 
 其他的:
-![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_6.png?raw=true)
-![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_7.png?raw=true)
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b88557b59c82c2?w=632&h=1252&f=png&s=114044)  
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b8855a11241c18?w=632&h=1252&f=png&s=109617)
+
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b88560a0f63f39?w=632&h=1252&f=png&s=110027)  
+![](https://user-gold-cdn.xitu.io/2019/6/24/16b88564fa4dab81?w=2880&h=1636&f=png&s=2132827)
