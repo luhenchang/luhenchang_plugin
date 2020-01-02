@@ -125,15 +125,14 @@ samples, guidance on mobile development, and a full API reference.
       ),
     );
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200102131505579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjY3Nzcw,size_16,color_FFFFFF,t_70)
-
+![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_anni.png?raw=true)
 当然很low吧。我们可以看到绘制完成时候可以通过border来绘制边来画出线。其实到这里我想简单的时间轴不用我写了吧？
 Colum(
   圆圈，
   容器(border),
   圆圈
 )
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200102131827901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjY3Nzcw,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_2.png?raw=true)
 
 我们看看border源码：
 
@@ -245,17 +244,11 @@ class MyPainterLeft extends CustomPainter {
  1.pubspec.yaml里面
    flutter_time_axis:  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git: https://github.com/luhenchang/flutter_time_axis.git
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200102133633309.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjY3Nzcw,size_16,color_FFFFFF,t_70)    
+![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_3.png?raw=true)    
 2.实例1:
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200102132300563.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjY3Nzcw,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200102132324187.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjY3Nzcw,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_4.png?raw=true)
+![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_5.png?raw=true)
 
 其他的:
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200102132412635.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjY3Nzcw,size_16,color_FFFFFF,t_70)
-
-
-
-
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200102132447260.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjY3Nzcw,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_6.png?raw=true)
+![在这里插入图片描述](https://github.com/luhenchang/IMAGE/blob/master/img_bizhan/time_7.png?raw=true)
